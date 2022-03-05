@@ -21,10 +21,16 @@ Using the Omah Café&Resto sales dataset, the data contains purchase history in 
 # Data Preparation
 The data used does not include all the columns in the dataset, some unused variables will be dropped. So the dataset used is to use product categories as columns and combine several of the same transaction ids.
 
-# Modelling
+# Modeling
 The algorithm used for clustering is K-Preparatio Means. K-Means is used to find out the pattern of the dataset and create groups. There are 2 clusters formed to classify loyal and disloyal customers.
 ![image](https://user-images.githubusercontent.com/100661486/156867974-1e13f202-2ec5-4fcf-a7ca-736fe7a480fa.png)
 ![image](https://user-images.githubusercontent.com/100661486/156868031-fe6115ee-81e5-4cf6-abd8-e743ecc86adf.png)
 
 # Evaluation and Deployment
 The model has succeeded in achieving the initial goal of classifying customer loyalty. Recommendations for promo packages for loyal customers based on product sales in each category.
+
+Ada 2 menu promo yang kami tawarkan yaitu 
+1. Noodles Category - All Variant with minimum purchase of 2 items the customer will get FREE 1 item in Tea Base Category - All Variant
+2. Snack Category - All Variant with minimum purchase of 5 items the customer will get FREE 1 items in Fancy Category - All Variant
+
+Note: the number of minimum purchase is decide by nilai yang didapat dari perhitungan k-means disetiap clusternya, i.e Noodles Category has 1.56 so the minimum purchase of category noodles items is 2. The reason, the owner continues to give discounts but also does not reduce revenue too much.
